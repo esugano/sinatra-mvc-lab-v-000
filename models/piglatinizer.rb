@@ -14,7 +14,6 @@ class PigLatinizer
         @pl_word << word.scan(/[aeoui]/)
         @pl_word  << word.join.scan(/[bcdfghjklmnpqrstvwxyz]/)
         @pl_word
-        binding.pry
       end
     end
 end
