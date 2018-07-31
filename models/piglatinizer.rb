@@ -10,8 +10,7 @@ class PigLatinizer
       @pl_word = []
 
       phrase.each do |word|
-        # @vowels = @word.scan(/[aeoui]/)
-        # @constants = @word.scan(/[bcdfghjklmnpqrstvwxyz]/)
+        binding.pry
         @pl_word << word.scan(/[aeoui]/)
         @pl_word  << word.join.scan(/[bcdfghjklmnpqrstvwxyz]/)
         @pl_word
