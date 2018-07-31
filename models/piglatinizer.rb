@@ -4,7 +4,7 @@ class PigLatinizer
   attr_accessor :phrase
 
     def piglatinize(phrase)
-      @phrase = phrase
+      @phrase = phrase.split("")
       binding.pry
       @phrase.map do |word|
         binding.pry
