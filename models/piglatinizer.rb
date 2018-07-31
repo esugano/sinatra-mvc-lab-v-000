@@ -7,7 +7,6 @@ class PigLatinizer
       @phrase = phrase.split("")
       binding.pry
       @phrase.map do |word|
-        binding.pry
         word = word.split()
         if word.length == 1
           "#{word}way"
