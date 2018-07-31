@@ -4,10 +4,8 @@ class PigLatinizer
   attr_accessor :phrase
 
     def piglatinize(phrase)
-      @phrase = phrase
+      @phrase = phrase.split("")
       @phrase.map do |word|
-        word = word.split("")
-        binding.pry
         if word.length == 1
           "#{word}way"
         elsif 'aeiou'.include? word[0].downcase
