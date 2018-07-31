@@ -6,6 +6,7 @@ class PigLatinizer
     def piglatinize(phrase)
       @phrase = phrase.split("")
       @phrase.map do |word|
+        binding.pry
         if word.length == 1
           "#{word}way"
         elsif 'aeiou'.include? word[0].downcase
