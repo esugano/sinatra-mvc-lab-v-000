@@ -1,6 +1,6 @@
 require 'pry'
 class PigLatinizer
-  
+
    def piglatinize(text)
     @text = text.downcase
     vowel ='aeiou'
@@ -15,7 +15,7 @@ class PigLatinizer
             "#{split[1]}#{split[2]}#{split[0]}ay"
         end
     end.join(' ')
-    
+
   end
-  
+
 end
