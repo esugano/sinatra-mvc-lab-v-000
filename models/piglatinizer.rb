@@ -5,6 +5,7 @@ class PigLatinizer
 
     def piglatinize(phrase)
       @phrase = phrase
+      binding.pry
       @phrase.map do |word|
         binding.pry
         word = word.split()
