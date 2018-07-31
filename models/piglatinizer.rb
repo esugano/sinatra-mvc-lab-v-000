@@ -12,6 +12,7 @@ class PigLatinizer
           "#{word}way"
         else
           new_word = word.split(/([aeiou])/,2)
+          binding.pry
           "#{new_word[1]}#{new_word[2]}#{new_word[0]}ay"
         end
     end.join('')
