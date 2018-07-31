@@ -1,12 +1,10 @@
 require 'pry'
 
 class PigLatinizer
-  attr_accessor :phrase, :vowels, :constants, :pl_word
+  attr_accessor :phrase, :pl_word
 
     def piglatinize(phrase)
       @phrase = phrase.split(" ")
-      @vowels = []
-      @constants = []
       @pl_word = []
 
       @phrase.each do |word|
