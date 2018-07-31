@@ -1,3 +1,5 @@
+require 'pry'
+
 class PigLatinizer
   attr_accessor :phrase, :vowels, :constants, :pl_word
 
@@ -15,5 +17,5 @@ class PigLatinizer
         @pl_word
         binding.pry
       end
-    end 
+    end
 end
