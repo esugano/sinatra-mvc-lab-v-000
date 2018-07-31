@@ -15,4 +15,5 @@ class PigLatinizer
         @pl_word
         binding.pry
       end
+    end 
 end
