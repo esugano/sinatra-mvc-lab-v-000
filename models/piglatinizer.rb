@@ -12,7 +12,7 @@ class PigLatinizer
       @phrase.each do |word|
         @pl_word << word.scan(/[aeoui]/)
         @pl_word  << word.scan(/[bcdfghjklmnpqrstvwxyz]/)
-        @pl_word
+        return @pl_word
       end
     end
 end
